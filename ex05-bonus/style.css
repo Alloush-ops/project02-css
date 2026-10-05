@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #f3f3f3; /* Light grey track */
+    border-top: 8px solid #3498db; /* Blue spinning edge */
+    border-radius: 50%;
+    
+    /* Animation shorthand: name duration easing iteration-count */
+    animation: spin 1.5s linear infinite;
+}
+
+/* Define the keyframes for the rotation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

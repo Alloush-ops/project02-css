@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.shape-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+/* 1. Square */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+}
+
+/* 2. Rectangle */
+.rectangle {
+    width: 150px;
+    height: 80px;
+    background-color: #2ecc71;
+}
+
+/* 3. Perfect Circle */
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+/* 4. Capsule Pill */
+.pill {
+    width: 160px;
+    height: 60px;
+    background-color: #9b59b6;
+    border-radius: 30px; /* Half of the height */
+}
+
+/* 5. CSS Triangle (Border Trick) */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f39c12;
+}

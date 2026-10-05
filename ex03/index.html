@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Opacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Color Models</h2>
+    <div class="swatch-container">
+        <div class="swatch named">Named</div>
+        <div class="swatch hex">HEX</div>
+        <div class="swatch rgb">RGB</div>
+        <div class="swatch rgba">RGBA (50% Alpha)</div>
+    </div>
+
+    <hr>
+
+    <h2>Opacity vs RGBA Transparency</h2>
+    <div class="comparison-container">
+        <!-- Box using opacity: 0.5 -->
+        <div class="box opacity-box">
+            <p>opacity: 0.5</p>
+            <button>I am faded too!</button>
+        </div>
+
+        <!-- Box using background-color: rgba() -->
+        <div class="box rgba-box">
+            <p>rgba(..., 0.5)</p>
+            <button>I stay 100% opaque!</button>
+        </div>
+    </div>
+</body>
+</html>

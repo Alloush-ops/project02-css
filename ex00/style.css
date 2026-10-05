@@ -1,0 +1,28 @@
+/* Navigation Bar Flexbox */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    margin-bottom: 40px;
+}
+
+/* Card Container Flexbox */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Basic styling to make the cards visible */
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+}

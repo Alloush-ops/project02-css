@@ -1,0 +1,59 @@
+/* Force scrolling to test fixed elements */
+body {
+    margin: 0;
+    padding-top: 60px; /* Prevents content from hiding under the fixed nav */
+    height: 1500px;
+    font-family: sans-serif;
+}
+
+/* 1. Pinned navigation bar */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    z-index: 100;
+}
+
+.content-wrapper {
+    padding: 50px;
+}
+
+/* 2. Card container (Nearest positioned ancestor for the badge) */
+.card {
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* 3. Absolute notification badge */
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* 4. Fixed back-to-top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+}

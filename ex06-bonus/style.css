@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    
+    /* The transition property smooths out the transform change */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The hover state triggers the transform */
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.interactive-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.interactive-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px) scale(1.05);
+}
